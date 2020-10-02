@@ -9,7 +9,9 @@ Simple `format` directives to print in colors:
 
 =>
 
-<span>Hello <span style="color: cyan">you</span>, are you a <span style="color: green">lisper</span> or <span style="color: red">not</span>?
+<!-- <span>Hello <span style="color: cyan">you</span>, are you a <span style="color: green">lisper</span> or <span style="color: red">not</span>? -->
+
+![](formatcolor.png)
 
 Instead of (with `cl-ansi-text`):
 
