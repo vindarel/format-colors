@@ -2,8 +2,6 @@
 Simple `format` directives to print in colors:
 
 ~~~lisp
-(use-package :format-colors)
-;; or import from :format-colors the symbols :red :blue :yellow :green :cyan :black :white :magenta.
 (format t "Hello ~/cyan/, are you a ~/green/ or ~/red/?" "you" "lisper" "not")
 ~~~
 
@@ -22,7 +20,31 @@ Instead of (with `cl-ansi-text`):
 ;; (format t "Hello ~a, are you a ~a or ~a?" (cl-ansi-text:cyan "you") (cl-ansi-text:green "lisper") (cl-ansi-text:red "not"))
 ~~~
 
-Let's see how it goes.
+**Bold and italic modifiers**
+
+Like all format directives, these can accept the `:` and `@` modifiers. `:` will be for `:`talic and `@` for b`@`ld.
+
+    "~:/blue/"
+    "~@/blue/"
+
+There are also numerical parameters that we don't use.
+
+It is possible to call the color functions directly, their signature is `stream arg colon-p at-sign-p &rest params`:
+
+~~~lisp
+(blue t "hello" nil nil)
+~~~
+
+
+## Install
+
+~~~lisp
+(use-package :format-colors)
+;; or import from :format-colors the symbols :red :blue :yellow :green :cyan :black :white :magenta.
+~~~
+
+
+That's all. Let's see how it goes.
 
 LLGPL
 
