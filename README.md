@@ -25,3 +25,13 @@ Instead of (with `cl-ansi-text`):
 Let's see how it goes.
 
 LLGPL
+
+---
+
+ps: to enable colors in Slime, one solution is [M-x slime-repl-ansi-on](https://github.com/deadtrickster/slime-repl-ansi-color/) (in MELPA).
+
+``` lisp
+(with-eval-after-load 'slime-repl
+  (require 'slime-repl-ansi-color))
+(add-hook 'slime-repl-mode-hook 'slime-repl-ansi-color-mode)
+```
