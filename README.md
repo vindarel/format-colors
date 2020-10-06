@@ -1,6 +1,8 @@
 
 Simple `format` directives to print in colors:
 
+On [Ultralisp](https://ultralisp.org/).
+
 ~~~lisp
 (format t "Hello ~/cyan/, are you a ~/green/ or ~/red/?" "you" "lisper" "not")
 ~~~
